@@ -9,9 +9,15 @@ document.querySelectorAll('.choices img').forEach(img => {
     img.addEventListener('click', () => {
         const userChoice = img.id;
         const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+        displayChoices(userChoice, computerChoice);
         determineWinner(userChoice, computerChoice);
     });
 });
+
+function displayChoices(userChoice, computerChoice) {
+    document.getElementById('your-pick').src = images[userChoice];
+    document.getElementById('computer-pick').src = images[computerChoice];
+}
 
 function determineWinner(userChoice, computerChoice) {
     let resultText;
