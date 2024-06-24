@@ -18,6 +18,15 @@
             font-size: 24px;
             font-weight: bold;
         }
+        .picks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .picks div {
+            margin: 0 20px;
+        }
     </style>
 </head>
 <body>
@@ -27,6 +36,16 @@
             <img src="rock.png" alt="Rock" id="rock">
             <img src="paper.png" alt="Paper" id="paper">
             <img src="scissors.png" alt="Scissors" id="scissors">
+        </div>
+        <div class="picks">
+            <div>
+                <h2>You</h2>
+                <img src="" alt="Your Pick" id="your-pick">
+            </div>
+            <div>
+                <h2>Computer</h2>
+                <img src="" alt="Computer's Pick" id="computer-pick">
+            </div>
         </div>
         <div class="result" id="result">Make your choice!</div>
     </div>
